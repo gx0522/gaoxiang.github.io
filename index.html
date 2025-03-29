@@ -1,10 +1,144 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-    <title>我的个人主页</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人简历</title>
+    <style>
+        /* 基础样式 */
+        body {
+            font-family: 'Helvetica', 'Arial', sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        
+        /* 头部样式 */
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .header h1 {
+            margin-bottom: 5px;
+        }
+        
+        .header p {
+            margin-top: 0;
+            color: #7f8c8d;
+        }
+        
+        /* 简历区块 */
+        .section {
+            margin-bottom: 20px;
+        }
+        
+        .section h2 {
+            border-bottom: 2px solid #eee;
+            padding-bottom: 5px;
+        }
+        
+        /* 工作经验/项目 */
+        .job, .project {
+            margin-bottom: 15px;
+        }
+        
+        .job h3, .project h3 {
+            margin-bottom: 5px;
+        }
+        
+        .job-period, .project-period {
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        /* 联系信息 */
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        /* 响应式适配 */
+        @media (max-width: 600px) {
+            body {
+                padding: 15px;
+            }
+            
+            .header h1 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>欢迎访问我的网站！</h1>
-    <p>这是我的 GitHub Pages 主页。</p>
+    <div class="header">
+        <h1>张三</h1>
+        <p>前端开发工程师 | Web 技术爱好者</p>
+    </div>
+    
+    <div class="contact-info">
+        <span>📧 <a href="mailto:your-email@example.com">your-email@example.com</a></span>
+        <span>🌐 <a href="https://github.com/yourusername">GitHub</a></span>
+        <span>📱 <a href="tel:+1234567890">+1234567890</a></span>
+    </div>
+    
+    <div class="section">
+        <h2>🔹 个人简介</h2>
+        <p>前端开发工程师，3 年 React/Vue 开发经验，熟悉 Node.js 和现代 Web 技术，对用户体验和性能优化有深入研究。</p>
+    </div>
+    
+    <div class="section">
+        <h2>🔹 工作经验</h2>
+        <div class="job">
+            <h3>ABC 科技有限公司 — 前端开发</h3>
+            <p class="job-period">2021.06 - 至今</p>
+            <ul>
+                <li>负责公司官网和后台系统前端开发，优化页面性能，加载速度提升 40%</li>
+                <li>引入 Webpack 优化构建流程，减少打包体积</li>
+                <li>与设计师合作优化 UI/UX</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>🔹 项目经历</h2>
+        <div class="project">
+            <h3>在线课程平台（React + Node.js）</h3>
+            <p class="project-period">2023.03 - 2023.08</p>
+            <ul>
+                <li>采用 React Hooks + Redux 管理状态</li>
+                <li>实现课程购买、播放、用户评论功能</li>
+                <li>使用 WebSocket 实现实时互动</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>🔹 技能</h2>
+        <ul>
+            <li><strong>前端</strong>: HTML5, CSS3, JavaScript (ES6+), React, Vue, Next.js</li>
+            <li><strong>后端</strong>: Node.js (Express), REST API, MongoDB</li>
+            <li><strong>工具</strong>: Git, Webpack, VSCode, Figma</li>
+        </ul>
+    </div>
+    
+    <div class="section">
+        <h2>🔹 教育背景</h2>
+        <p><strong>清华大学 计算机科学与技术 本科</strong> | 2017.09 - 2021.06</p>
+    </div>
 </body>
 </html>
+
